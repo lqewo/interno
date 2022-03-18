@@ -1,0 +1,21 @@
+$gray: #151516;
+$title: #07070b;
+$subtitle: #91919d;
+$black: #313438;
+$wg: #f6f7fa;
+$btn: #07070b;
+
+@mixin title {
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  font-weight: 700;
+  color: #424242;
+}
+
+@mixin btn {
+  padding: 22px 38px;
+  background: #f2d080;
+  border-radius: 12px;
+  color: #07070b;
+}
