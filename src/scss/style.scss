@@ -1,7 +1,110 @@
-@import "_fonts";
-@import "vars";
-@import "global";
-@import "_header";
+@import '_fonts';
+@import 'vars';
+@import 'global';
+@import '_header';
+
+.achievement {
+	padding-top: 78px;
+	background-image: url(../img/achievement-bg.jpg);
+	background-position: center;
+	// .achievement__title
+
+	&__title {
+		@include title;
+	}
+
+	// .achievement__inner
+
+	&__inner {
+	}
+}
+.content {
+	width: 100%;
+	margin-top: 51px;
+	counter-reset: item;
+	// .content__wrapper
+	&__wrapper {
+		display: flex;
+		counter-increment: item;
+		img {
+			margin-left: 100px;
+			object-fit: cover;
+			margin-top: 100px;
+		}
+
+		&:nth-child(2n) {
+			flex-direction: row-reverse;
+		}
+	}
+
+	// .content__wrapper-item
+
+	&__wrapper-item {
+		&::before {
+			max-height: 113px;
+			content: '0' counter(item);
+			font-family: Roboto;
+			font-weight: 900;
+			font-size: 96px;
+			line-height: 112px;
+			text-transform: uppercase;
+			color: #cfa55b;
+			opacity: 0.3;
+		}
+	}
+
+	// .content__wrapper-title
+
+	&__wrapper-title {
+		width: 543px;
+		margin: 24px 0 42px;
+		font-family: museosanscyrl-700;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 36px;
+		text-transform: uppercase;
+		color: #454545;
+	}
+
+	// .content__wrapper-list
+
+	&__wrapper-list {
+	}
+
+	// .content__wrapper-element
+
+	&__wrapper-element {
+		max-width: 455px;
+		padding-left: 50px;
+		position: relative;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		color: #424242;
+		margin-bottom: 32px;
+		&::before {
+			position: absolute;
+			left: 0;
+			top: 0;
+			content: url(../img/romb.svg);
+		}
+	}
+
+	// .content__wrapper-btn
+
+	&__wrapper-btn {
+		margin-top: 30px;
+		@include btn;
+		font-family: museosanscyrl-700;
+		padding: 32px 66px;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		color: #fff;
+		box-shadow: 0px 20px 40px rgba(207, 165, 91, 0.4);
+	}
+}
 
 // Media
-@import "media";
+@import 'media';
