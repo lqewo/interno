@@ -1,0 +1,39 @@
+.footer {
+	&__inner {
+		min-height: 150px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: #424242;
+
+		&-map {
+			position: relative;
+			font-family: museosanscyrl-500;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 17px;
+			padding-left: 60px;
+
+			&::before {
+				content: url('../img/locate.svg');
+				position: absolute;
+				color: #cfa55b;
+				left: 0;
+				top: 0;
+				width: 39px;
+				height: 39px;
+			}
+		}
+
+		// .footer__tel
+
+		&-tel {
+			font-family: museosanscyrl-700;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 29px;
+			color: #424242;
+			text-transform: uppercase;
+		}
+	}
+}

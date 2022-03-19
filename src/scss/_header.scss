@@ -95,6 +95,8 @@
 		&-item {
 			.text {
 				max-width: 630px;
+				max-height: 300px;
+				overflow-x: visible;
 				font-weight: 700;
 				font-size: 36px;
 				line-height: 43px;

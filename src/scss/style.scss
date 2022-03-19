@@ -2,6 +2,7 @@
 @import 'vars';
 @import 'global';
 @import '_header';
+@import '_footer';
 
 .achievement {
 	padding-top: 78px;
@@ -27,6 +28,8 @@
 		display: flex;
 		counter-increment: item;
 		img {
+			object-fit: cover;
+			max-height: 490px;
 			margin-left: 100px;
 			object-fit: cover;
 			margin-top: 100px;
