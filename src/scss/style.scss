@@ -319,6 +319,7 @@
 .tab {
 	// .tab__element
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	margin-bottom: 61px;
 

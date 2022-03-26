@@ -22,4 +22,10 @@ const swiper = new Swiper('.swiper', {
         $('.catalog-slider').removeClass('catalog-slider--active')
         $($(this).attr('href')).addClass('catalog-slider--active')
     })
+
+    $(window).resize(function(){
+      var windowWidth = $('body').innerWidth();
+      if(windowWidth < 800){$(".container").addClass('container-fluid');}
+      else{$(".container").removeClass('container-fluid');}
+    });
   });
