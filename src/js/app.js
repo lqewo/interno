@@ -1,17 +1,16 @@
 import * as flsFunction from "./modules/functions.js";
 
-
 flsFunction.isWebp();
-
+import $ from "jquery";
 import Swiper, { Navigation, Pagination } from 'swiper';
 
 Swiper.use(Navigation, Pagination);
 
 const swiper = new Swiper('.swiper', {
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
 
   $(function()  {
