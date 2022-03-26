@@ -262,6 +262,7 @@
 	.card {
 		&__inner {
 			width: auto;
+			max-height: initial;
 		}
 		&__title,
 		&__text {
